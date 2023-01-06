@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_dialog_options_light_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_dialog_light_background"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dialog_padding_margin"
+        android:paddingBottom="@dimen/dialog_padding_margin">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diary_dialog_light_background"
+        android:minHeight="50dp"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone"
+                app:tint="@color/gray" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                android:text="@string/confirm_request"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo"
+                android:text="Lorem Ipsum is simply dummy text of the printing and.. printing printing"
+                android:gravity="right"
+                android:visibility="invisible"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginTop="13dp"
+                android:text="@string/confirm_description"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dialog_bottom_layout_height"
+        android:background="@drawable/bottom_dialog_light_background"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="@dimen/dialog_bottom_layout_height">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:text="CANCEL"
+                    android:textSize="@dimen/dialog_titles"
+                    android:fontFamily="@font/museo"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="@dimen/dialog_bottom_layout_height">
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:text="@string/proceed_caps"
+                    android:textSize="@dimen/dialog_titles"
+                    android:fontFamily="@font/museo"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
