@@ -1,2 +1,1 @@
-# customdialogs
-# customdialogs
+Custom Kotlin Dialogs using XML
